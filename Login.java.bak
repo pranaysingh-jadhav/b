@@ -1,0 +1,64 @@
+import java.util.Scanner;
+class Login 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("----well come----");
+		System.out.println("Enter the detsils for registation");
+		System.out.println("Enter Name : ");
+		String name = sc.nextLine();
+		System.out.println("enter the mail id : ");
+		String mail = sc.nextLine();
+		System.out.println("Enter the user name : ");
+		String oun = sc.nextLine();
+		System.out.println("Enter the password : ");
+		int psn = sc.nextInt();
+		System.out.println(" registation success");
+		System.out.println("Enter 1 for login ");
+		System.out.println("Enter 2 for exit ");
+		int a = sc.nextInt();
+		if(a==1)
+		{
+			System.out.println("Enter the username : ");
+			String nun = sc.next();
+			System.out.println("Enter the passward : ");
+			int npsw = sc.nextInt();
+			if(oun.equals(nun)&&psn == npsw)
+				{
+					System.out.println("Enter the first value for caluclation : ");
+					int i = sc.nextInt();
+					System.out.println("Enter the second value for caluclation : ");
+					int j = sc.nextInt();
+					System.out.println("Enter 1 for addition..");
+					System.out.println("Enter 2 for subraction..");
+					System.out.println("Enter 3 for multipication..");
+					System.out.println("Enter 4 to divide two numbers and get value..");
+					System.out.println("Enter 5 to divivde two number and get remainder..");
+					int k = sc.nextInt();
+					switch(k)
+					{
+						case 1 : System.out.println("value i is : " +i+ " value j is : " +j+ " addition of i and j is : " +(i+j)); break;
+						case 2 : System.out.println("value i is : " +i+ " value j is : " +j+ " subraction of i and j is : " +(i-j)); break;
+						case 3 : System.out.println("value i is : " +i+ " value j is : " +j+ " multiplication of i and j is : " +(i*j)); break;
+						case 4 : System.out.println("value i is : " +i+ " value j is : " +j+ " division of i and j is : " +(i/j)); break;
+						case 5 : System.out.println("value i is : " +i+ " value j is : " +j+ " remainder of i and j is : " +(i%j)); break;
+						default : System.out.println("invalid input");
+					}
+				}
+				else
+			{
+					System.out.println("incorrect username or password");
+			}
+		}
+		else if(a==2);
+		{
+			System.out.println("----Visite again----");
+		}
+		else
+		{
+			System.out.println("----Try again----");
+		}
+	}
+}
+
