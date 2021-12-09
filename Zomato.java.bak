@@ -22,7 +22,7 @@ class Zomato {
 		System.out.println("EMAIL");
 		String email = sc.next();
 
-		System.out.println("ENTER PASSWORD (ENTER ONLY NUMBERS)");   
+		System.out.println("ENTER PASSWORD (ENTER ONLY NUMBERS)");
 		String pass = sc.next();
 
 		System.out.println("HUMAN VERIFICATION");
